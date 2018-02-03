@@ -1,22 +1,32 @@
 ---
 layout: landing
 ---
-----------------------------
-{% for post in site.posts %}
-  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    <p>{{ post.date | date_to_string }}</h2>
-      {% assign foundImage = 0 %}
-      {% assign images = post.content | split:"<img " %}
-      {% for image in images %}
-        {% if image contains 'src' %}
+               {% for post in site.posts %}
+                <div class="col s12 m4">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                    {% assign foundImage = 0 %}
+                  {% assign images = post.content | split:"<img " %}
+                  {% for image in images %}
+                    {% if image contains 'src' %}
+                        {% if foundImage == 0 %}
+                            {% assign html = image | split:"/>" | first %}
+                            <img {{ html }} />
+                            {% assign foundImage = 1 %}
+                        {% endif %}
+                    {% endif %}
+                  {% endfor %}                            
+                        <span class="card-title">{{ post.title }}</span>
 
-            {% if foundImage == 0 %}
-                {% assign html = image | split:"/>" | first %}
-                <img {{ html }} />
-                {% assign foundImage = 1 %}
-            {% endif %}
-        {% endif %}
-      {% endfor %}
-
-{% endfor %}
-----------------
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p> {{ post.excerpt }}...</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="{{ post.url | prepend: site.baseurl }}">get the book <small class="text-darken-1" >{{ post.date | date_to_string }}</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
