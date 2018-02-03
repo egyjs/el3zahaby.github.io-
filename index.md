@@ -1,1 +1,5 @@
-      <h1>{{ page.url }}</h1>
+---
+layout: landing
+---
+
+<h1>{{ page.url }}</h1>
