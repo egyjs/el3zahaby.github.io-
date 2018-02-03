@@ -4,7 +4,7 @@ author:
   name: 7el™
 google_analytics: UA-XXXXXXXX-X
 markdown: kramdown
-url: https://www.hacker101.com
+url: https://el3zahaby.github.io/7el
 twitter:
   username: Hacker0x01
 facebook:
@@ -18,3 +18,4 @@ social:
 logo: /assets/images/h101_angle.png
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
