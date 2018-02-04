@@ -1,22 +1,20 @@
----
-layout: landing
----
-               {% for post in site.posts %}
-                               <div class="col s12 m4">
-                    <div class="card horizontal">
-                        <div class="card-image">
-                        <img src="{{ site.baseurl }}{{ post.image }}" width="100%" />                          
-                        <span class="card-title">{{ post.title }}</span>
+--- 
+layout: landing 
 
-                        </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
-                                <p> {{ post.excerpt }}...</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="{{ post.url | prepend: site.baseurl }}">get the book <small class="text-darken-1" >{{ post.date | date_to_string }}</small></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
+--- 
+{% for post in site.posts %}
+<div class="col s12 m4">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{ site.baseurl }}{{ post.image }}" width="100%" />
+                <span class="card-title">{{ post.title }}</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+                <p> {{ post.excerpt }}...</p>
+            </div>
+        </div>
+    </a>
+</div>
+{% endfor %}
