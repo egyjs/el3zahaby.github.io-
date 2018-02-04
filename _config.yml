@@ -4,17 +4,15 @@ author:
   name: 7el™
 google_analytics: UA-XXXXXXXX-X
 markdown: kramdown
-url: https://el3zahaby.github.io/7el
+url: https://el3zahaby.github.io
 twitter:
-  username: Hacker0x01
+  username: #
 facebook:
-  app_id: 345444188982280
+  app_id: #
 social:
   links:
-    - https://twitter.com/Hacker0x01
-    - https://www.facebook.com/Hacker0x01
-    - https://www.linkedin.com/company/hackerone
-    - https://github.com/Hacker0x01
+    - https://twitter.com/--
+    - https://www.facebook.com/--
 logo: /assets/images/h101_angle.png
 plugins:
   - jekyll-seo-tag
