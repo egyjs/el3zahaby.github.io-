@@ -16,7 +16,7 @@ $(document).ready(function () {
         "width": "100%",
         "height": "450",
         "border": "0",
-        "position": "absolute",
+//        "position": "absolute",
         "right": "0",
         "left": "0"
     });
