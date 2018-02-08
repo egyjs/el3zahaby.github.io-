@@ -14,7 +14,7 @@ $(document).ready(function () {
     frame.addClass('card');
     frame.css({
         "width": "100%",
-        "height": "450",
+        "height": "400",
         "border": "0",
 //        "position": "absolute",
         "right": "0",
