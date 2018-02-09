@@ -3,4 +3,9 @@
 
 - [ ] get domain
 - [x] add FB comment
+- [ ] pages
+- - [ ] about us
+- - [ ] "اضف اجابتك"
+- - [ ] "طلب اجابة"
+- [ ] custom page like e.g : category
 - [ ] ...
