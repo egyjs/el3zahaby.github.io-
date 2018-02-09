@@ -8,4 +8,5 @@
 - - [ ] "اضف اجابتك"
 - - [ ] "طلب اجابة"
 - [ ] custom page like e.g : category
+- [ ] feed.xml or "json"
 - [ ] ...
