@@ -1,7 +1,9 @@
 ---
-permalink: test.json
+permalink: /test
 ---
 
-{{ site[] }}
+{% seo %}
 ##
+{{ seo }}
+---
 {{ page }}
