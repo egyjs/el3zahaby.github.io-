@@ -1,12 +1,7 @@
 (function ($) {
     $(function () {
 
-        $('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 300
-      edge: 'left', // Choose the horizontal origin
-
-    }
-  );
+        $('.button-collapse').sideNav();
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space
