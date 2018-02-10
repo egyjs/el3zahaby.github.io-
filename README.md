@@ -13,4 +13,5 @@
 - [ ] Google Search
 - [ ] android app 
 - [ ] multiLang
+- [ ] Logo & Icon
 - [ ] ...
