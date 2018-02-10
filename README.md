@@ -12,4 +12,5 @@
 - [ ] SEO Tags
 - [ ] Google Search
 - [ ] android app 
+- [ ] multiLang
 - [ ] ...
