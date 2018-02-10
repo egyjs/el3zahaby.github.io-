@@ -2,6 +2,6 @@
 permalink: test.json
 ---
 
-{{ site }}
+{{ site[] }}
 ##
 {{ page }}
