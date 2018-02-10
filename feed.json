@@ -3,7 +3,7 @@ permalink: feed.json
 ---
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": {{ site.name | smartify | jsonify }},
+    "title": {{ site.title | smartify | jsonify }},
     "home_page_url": "{{ site.url }}/",
     "feed_url": "{{ site.url }}/feed.json",
     "author": {
