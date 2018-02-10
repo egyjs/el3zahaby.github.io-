@@ -1,6 +1,6 @@
 ---
 title: عنا
-permalink: /عنا/
+permalink: /عنا
 layout: landing
 
 ---
