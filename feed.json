@@ -10,7 +10,8 @@ permalink: feed.json
         "name": "{{ site.author.name }}",
         "url": "{{ site.author.uri }}"
     },
-    "icon": "{{ site.url }}/hotlink-ok/favicon.large.png",
+    "icon": "{{ site.url }}/img/favicon.large.png",
+    "logo": "{{ site.url }}/img/logo.png",
     "expired": false,
     "items": [
 {% for post in site.posts %}
