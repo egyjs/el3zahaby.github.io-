@@ -8,7 +8,7 @@
 - - [ ] "اضف اجابتك"
 - - [ ] "طلب اجابة"
 - [ ] custom page like e.g : category
-- [x] feed.xml or "json"
+- [x] feed."xml" & "json"
 - [ ] SEO Tags
 - [ ] Google Search
 - [ ] android app 
