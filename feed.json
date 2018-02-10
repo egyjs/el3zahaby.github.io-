@@ -7,8 +7,8 @@ permalink: feed.json
     "home_page_url": "{{ site.url }}/",
     "feed_url": "{{ site.url }}/feed.json",
     "author": {
-        "name": "{{ site.author }}",
-        "url": "https://keybase.io/ndarville"
+        "name": "{{ site.author.name }}",
+        "url": "{{ site.author.uri }}"
     },
     "icon": "{{ site.url }}/hotlink-ok/favicon.large.png",
     "expired": false,
