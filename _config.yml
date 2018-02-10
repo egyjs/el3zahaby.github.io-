@@ -17,4 +17,5 @@ logo: /assets/images/h101_angle.png
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
   - jemoji
