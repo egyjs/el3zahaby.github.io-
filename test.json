@@ -1,3 +1,7 @@
+---
+permalink: test.json
+---
+
 {{ site | smartify | jsonify }}
 ##
 {{ page | smartify | jsonify }}
