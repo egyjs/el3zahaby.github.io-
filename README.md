@@ -9,7 +9,7 @@
 - - [ ] "طلب اجابة"
 - [ ] custom page like e.g : category
 - [x] feed."xml" & "json"
-- [ ] SEO Tags
+- [x] SEO Tags
 - [ ] Google Search
 - [ ] android app 
 - [ ] multiLang
