@@ -11,6 +11,7 @@
 - [ ] custom page like e.g : category
 - [x] feed."xml" & "json"
 - [x] SEO Tags
+- [ ] share the book post
 - [ ] Google Search
 - [ ] android app 
 - [ ] multiLang
