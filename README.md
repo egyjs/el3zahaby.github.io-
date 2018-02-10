@@ -4,9 +4,10 @@
 - [ ] get domain
 - [x] add FB comment
 - [ ] pages
-- - [ ] about us
+- - [x] about us
 - - [ ] "اضف اجابتك"
 - - [ ] "طلب اجابة"
+- - [ ] "تواصل معنا"
 - [ ] custom page like e.g : category
 - [x] feed."xml" & "json"
 - [x] SEO Tags
