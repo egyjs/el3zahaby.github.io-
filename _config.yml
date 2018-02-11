@@ -5,7 +5,10 @@ author:
   name: 7el™
   uri: //elzahaby.tk
 lang: ar-SA
-
+shortener:
+  basepath: /s/        # Path for stored redirects.
+  preserve: false      # Keep previously generated files.
+  salt:     "LouisT"   # The optional salt, used when hasing the Unix time.
 google_analytics: UA-XXXXXXXX-X
 markdown: kramdown
 url: https://el3zahaby.github.io
