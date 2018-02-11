@@ -14,6 +14,9 @@ layout: landing
                 </a>
             </div>
             <div class="card-content">
+                {%if page.short %}Short URL: <a href="{{ page.short.url }}" target="_blank">{{ page.short.hash }}</a>{% endif %}
+                {%if post.short %}Short URL: <a href="{{ post.short.url }}" target="_blank">{{ post.short.hash }}</a>{% endif %}
+
                 <p> {{ post.excerpt }}...</p>
             </div>
         </div>
