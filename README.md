@@ -15,6 +15,6 @@
 - [ ] short url post
 - [ ] Google Search
 - [ ] android app 
-- [ ] multiLang
+- [=] google translate plugin
 - [ ] Logo & Icon
 - [ ] ...
