@@ -38,6 +38,7 @@
 
             <div class="card">
                 <div class="card-content ">
+                   {%if page.short %}Short URL: <a href="{{ page.short.url }}" target="_blank">{{ page.short.hash }}</a>{% endif %}
                     <span class="card-title">{{ page.title }}</span>
 <hr>
                     {{ content }}
