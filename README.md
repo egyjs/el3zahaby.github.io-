@@ -12,7 +12,7 @@
 - [x] feed."xml" & "json"
 - [x] SEO Tags
 - [ ] share the book post
-- [ ] short url post
+- [=] short url post
 - [ ] Google Search
 - [ ] android app 
 - [ ] Logo & Icon
