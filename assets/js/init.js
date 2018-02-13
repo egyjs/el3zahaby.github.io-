@@ -28,6 +28,7 @@ $(document).ready(function () {
 $('.fb-comments').attr("data-href",window.location.href);
 
 
+
 function cut() {
   // get your keys from here https://developers.google.com/url-shortener/v1/getting_started#APIKey
 	gapi.client.setApiKey('AIzaSyCjUI_80DvRumdnarsZb3pgpOQyLvFKEco');
@@ -51,4 +52,3 @@ function cut() {
 		});
 	});
 }
-window.onload = cut;
