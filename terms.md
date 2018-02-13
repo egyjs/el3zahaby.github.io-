@@ -1,7 +1,7 @@
 ---
 title: اختيار الفصل الدراسي
 permalink: /term/
-
+layout: none
 ---
 <style>
     body {
