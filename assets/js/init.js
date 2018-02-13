@@ -44,7 +44,9 @@ function cut(text) {
         request.execute(function (response) {
 
             if (response.id != null) {
-                $(".sharebtn.whatsapp").attr("href",text +"  : \n"+ response.id);
+                $(".sharebtn.whatsapp").attr("href","whatsapp://send?text="+text +" : \n"+ response.id);
+                $(".sharebtn.facebook").attr("href","https://www.facebook.com/sharer/sharer.php?u="+ response.id + "&t="+ text);
+                $(".sharebtn.twitter").attr("href","https://twitter.com/share?url="+ response.id+"&text="+text);
             } else {
                 alert("Error: creating short url \n" + response.error);
             }
