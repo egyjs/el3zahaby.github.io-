@@ -43,7 +43,7 @@ function cut() {
 		request.execute(function(response) {
 
 			if (response.id != null) {
-				document.getElementById("alert").innerHTML = response.id;
+				alert(response.id);
 			}
 			else {
 				alert("Error: creating short url \n" + response.error);
