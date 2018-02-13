@@ -29,7 +29,7 @@ $('.fb-comments').attr("data-href", window.location.href);
 
 
 
-function cut(href) {
+function cut(text) {
     // get your keys from here https://developers.google.com/url-shortener/v1/getting_started#APIKey
     gapi.client.setApiKey('AIzaSyCjUI_80DvRumdnarsZb3pgpOQyLvFKEco');
     gapi.client.load('urlshortener', 'v1', function () {
@@ -44,7 +44,7 @@ function cut(href) {
         request.execute(function (response) {
 
             if (response.id != null) {
-                $(href).attr("href", response.id);
+                $(".sharebtn.whatsapp").attr("href",text +"  : \n"+ response.id);
             } else {
                 alert("Error: creating short url \n" + response.error);
             }
