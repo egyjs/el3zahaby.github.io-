@@ -15,5 +15,5 @@
 - [x] short url post
 - [ ] Google Search
 - [ ] android app 
-- [=] Logo & Icon
+- [x] Logo & Icon
 - [ ] ...
