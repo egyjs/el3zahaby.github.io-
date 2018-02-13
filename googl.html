@@ -1,5 +1,4 @@
 <html>
-<script src="https://apis.google.com/js/client.js"> </script>
 
 <script type="text/javascript">
 
@@ -7,14 +6,13 @@
 //
 
 
-function load() {
+function cut() {
   // get your keys from here https://developers.google.com/url-shortener/v1/getting_started#APIKey
 	gapi.client.setApiKey('AIzaSyCjUI_80DvRumdnarsZb3pgpOQyLvFKEco');
 	gapi.client.load('urlshortener', 'v1', function() {
 		document.getElementById("result").innerHTML = "";
 
-		var Url =
-		'https://jeromeetienne.github.io/AR.js/three.js/examples/augmented-webpages/examples/screenAsPortal/index.html#{"trackingBackend":"artoolkit","markerPageResolution":"1920x979"}';
+		var Url = window.location.href;
 		var request = gapi.client.urlshortener.url.insert({
 			'resource': {
 				'longUrl': Url
@@ -33,7 +31,7 @@ function load() {
 		});
 	});
 }
-window.onload = load;
+window.onload = cut;
 </script>
 <body>
 	<div id="result"></div>

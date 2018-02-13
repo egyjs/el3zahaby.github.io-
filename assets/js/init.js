@@ -24,4 +24,31 @@ $(document).ready(function () {
 
 
 });
+
 $('.fb-comments').attr("data-href",window.location.href);
+
+
+function cut() {
+  // get your keys from here https://developers.google.com/url-shortener/v1/getting_started#APIKey
+	gapi.client.setApiKey('AIzaSyCjUI_80DvRumdnarsZb3pgpOQyLvFKEco');
+	gapi.client.load('urlshortener', 'v1', function() {
+		//document.getElementById("result").innerHTML = "";
+
+		var Url = window.location.href;
+		var request = gapi.client.urlshortener.url.insert({
+			'resource': {
+				'longUrl': Url
+			}
+		});
+		request.execute(function(response) {
+
+			if (response.id != null) {
+				document.getElementById("alert").innerHTML = response.id;
+			}
+			else {
+				alert("Error: creating short url \n" + response.error);
+			}
+		});
+	});
+}
+window.onload = cut;
