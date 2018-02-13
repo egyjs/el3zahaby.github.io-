@@ -17,7 +17,7 @@ social:
   links:
     - https://twitter.com/--
     - https://www.facebook.com/--
-logo: /assets/images/h101_angle.png
+logo: /assets/img/logo512.png
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
