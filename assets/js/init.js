@@ -44,7 +44,7 @@ function cut() {
 		request.execute(function(response) {
 
 			if (response.id != null) {
-				alert(response.id);
+				$(".sharebtn").attr("href",response.id);
 			}
 			else {
 				alert("Error: creating short url \n" + response.error);
