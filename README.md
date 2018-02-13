@@ -3,7 +3,7 @@
 
 - [ ] get domain
 - [x] add FB comment
-- [ ] pages
+- [ ] Pages | [Terms](/terms "Pages of terms")
 - - [x] about us
 - - [ ] "اضف اجابتك"
 - - [ ] "طلب اجابة"
@@ -17,3 +17,4 @@
 - [ ] android app 
 - [x] Logo & Icon
 - [ ] ...
+
