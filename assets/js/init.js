@@ -44,7 +44,7 @@ function cut(href) {
         request.execute(function (response) {
 
             if (response.id != null) {
-                $().attr("href", response.id);
+                $(href).attr("href", response.id);
             } else {
                 alert("Error: creating short url \n" + response.error);
             }
