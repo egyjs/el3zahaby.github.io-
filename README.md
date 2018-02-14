@@ -3,7 +3,7 @@
 
 - [ ] get domain
 - [x] add FB comment
-- [ ] Pages | [Terms](/terms.md "Pages of terms")
+- [ ] Pages | [Terms](/terms3.md "Pages of terms high school")
 - - [x] about us
 - - [ ] "اضف اجابتك"
 - - [ ] "طلب اجابة"
