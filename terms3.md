@@ -1,6 +1,6 @@
 ---
 title: اختيار الفصل الدراسي
-permalink: /term/
+permalink: /3/
 layout: none
 ---
 <style>
@@ -40,6 +40,10 @@ layout: none
     .btn.g {
         background: #4caf50;
     }
+    
+    .btn.o {
+        background: #f67629;
+    }
 
     h1.logo {
         font-family: 'Harmattan', sans-serif;
@@ -58,6 +62,9 @@ layout: none
 <link href="https://fonts.googleapis.com/css?family=Harmattan|Mada" rel="stylesheet">
 <center dir="rtl">
     <h1 style="font-size:40px" class="logo">{{site.title}}</h1>
-    <a href="#" class="btn b" style="margin-bottom: 10px;">الفصل الأول</a>
-    <a href="#" class="btn g">الفصل الثاني</a>
+    <a href="#" class="btn b" style="margin-bottom: 10px;">مقررات 1</a>
+    <a href="#" class="btn g">مقررات 2</a>
+    <a href="#" class="btn o">مقررات 3</a>
+    <a href="#" class="btn b">مقررات 4</a>
+    <a href="#" class="btn g">مقررات 5</a>
 </center>
