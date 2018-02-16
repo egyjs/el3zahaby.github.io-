@@ -18,6 +18,8 @@ social:
     - https://twitter.com/--
     - https://www.facebook.com/--
 logo: /assets/img/logo512.png
+gems:
+  - jekyll-archives
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
