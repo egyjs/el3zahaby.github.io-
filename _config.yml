@@ -30,13 +30,7 @@ social:
 logo: /assets/img/logo512.png
 
 gems:
-  - jekyll-archives
-
-jekyll-archives:
-  enabled: 'all'
-  layout: 'archive'
-  permalinks:
-    category: '/category/:name/'
+- jekyll/tagging
         
 plugins:
   - jekyll-seo-tag
