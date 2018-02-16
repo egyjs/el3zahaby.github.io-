@@ -1,25 +1,47 @@
 name: مناهج
+
 title: مناهج للحلول
+
 description: موقع مناهج التعليمي لحل الكتب الدراسية عبر منصة تعليمية ينشر الموقع من خلال انشاء فصول دراسية للمرحلة الابتدائية والمتوسطة والثانوية يساهم الموقع في نشر التعليم عبر نشر الكتب الدراسية
+
 author:
   name: مناهج للحول™
   uri: //elzahaby.tk
+  
 lang: ar-SA
 
 google_analytics: UA-XXXXXXXX-X
+
 markdown: kramdown
+
 url: https://el3zahaby.github.io
+
 twitter:
   username: #
+  
 facebook:
   app_id: #
+  
 social:
   links:
     - https://twitter.com/--
     - https://www.facebook.com/--
+    
 logo: /assets/img/logo512.png
+
 gems:
   - jekyll-archives
+  
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+        
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
