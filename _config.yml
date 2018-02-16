@@ -32,23 +32,11 @@ logo: /assets/img/logo512.png
 gems:
   - jekyll-archives
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled: 
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled: 'all'
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
         
 plugins:
   - jekyll-seo-tag
