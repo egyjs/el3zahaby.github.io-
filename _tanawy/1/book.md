@@ -1,17 +1,14 @@
 ---
-title: Purple
-layout: page
-img: webjeda-purple-jekyll-theme.jpg
-description: Webjeda Purple is a minimal theme built on default jekyll theme. It is very light highly customizable. Suitable for minimal blogs.
-link: http://webjeda.com/purple/
+title: 'حل كتاب الحديث 1 مقررات اول ثانوي كامل'
+layout: post
+image: /assets/img/cover_hadith1_1.jpg
+excerpt_separator: '<!--more-->'
 ---
 
-# Features
+حل كتاب الحديث 1 مقررات اول ثانوي كامل<!--more-->:
 
-## Customizable theme
-The theme can be customized just by changing few variables in **_config.yml** file.
+| بالتوفيق :clap:   |
+| ------------ |
+| ولتحميل الكتاب  : <a href="/assets/files/Hadith1.pdf" download >اضغط هنا</a>  |
 
-## Lightweight
-Since the theme is based on default Jekyll theme, it is very lightweight. No JavaScript except analytics is used!
-
-[**Preview**]({{page.link}})
+<div class="url">/assets/files/Hadith1.pdf</div>
