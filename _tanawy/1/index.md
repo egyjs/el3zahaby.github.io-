@@ -1,7 +1,6 @@
 ---
 layout: landing
-title: ثانوي
-permalink: /tanawy/1/
+
 ---
 
 {% for tanawy in site.tanawy %}
