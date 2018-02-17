@@ -1,6 +1,6 @@
 ---
-title: اول ثانوي
-permalink: /tanawy/1/
+title: "اول ثانوي"
+permalink: "/tanawy/1/"
 layout: landing
 ---
 
