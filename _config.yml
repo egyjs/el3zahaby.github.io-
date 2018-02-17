@@ -29,6 +29,9 @@ social:
     
 logo: /assets/img/logo512.png
 
+collections:
+    - tanawy
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
