@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <ul>
   {% directory path: /_tanawy/1/ exclude: private %}
     <li>
