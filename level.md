@@ -79,5 +79,5 @@ layout: none
     <p></p>
     <a href="#" class="btn o disabled" style="margin-bottom: 10px;">ابتدائي</a>
     <a href="#" class="btn g disabled" style="margin-bottom: 10px;">متوسط</a>
-    <a href="/3/" class="btn b">ثانوي</a>
+    <a href="/tanawy/" class="btn b">ثانوي</a>
 </center>
