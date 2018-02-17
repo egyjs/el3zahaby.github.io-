@@ -60,4 +60,19 @@ title: ثانوي
         </div>
     </a>
 </div>
+<div class="col">
+    <a href="#">
+        <div class="card">
+            <div class="card-image">
+                <div class="titleIMG" width="100%" >
+                  سيتم اضافة المزيد من المقررات قريبا
+                </div>
+
+            </div>
+            <div class="card-content">
+                <p>:)</p>
+            </div>
+        </div>
+    </a>
+</div>
 
