@@ -8,7 +8,7 @@
 - - [ ] "اضف اجابتك"
 - - [ ] "طلب اجابة"
 - - [ ] "تواصل معنا"
-- [ ] custom page like e.g : category
+- [=] custom page like e.g : category
 - [x] feed."xml" & "json"
 - [x] SEO Tags
 - [x] share the book post
