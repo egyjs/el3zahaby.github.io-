@@ -29,12 +29,6 @@ social:
     
 logo: /assets/img/logo512.png
 
-tag_page_layout: tag
-tag_page_dir: blog/tags
-
-gems:
-- jekyll/tagging
-        
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
