@@ -4,5 +4,6 @@
   <li><a href="{{ page.url }}">{{ page }}</a></li>
 
 {% endfor %}
+{{ site.collections }}
 </ul>
 
