@@ -30,7 +30,9 @@ social:
 logo: /assets/img/logo512.png
 
 collections:
-    - tanawy
+    tanawy:
+        output: true
+        permalink: /tanawy/:path/
 
 plugins:
   - jekyll-seo-tag
