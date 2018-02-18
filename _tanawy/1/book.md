@@ -14,4 +14,5 @@ category: 'TF'
 | ------------ |
 | ولتحميل الكتاب  : <a href="/assets/files/Hadith1.pdf" download >اضغط هنا</a>  |
 
-<div class="url">/assets/files/Hadith1.pdf</div>
+{% assign filename = page.url | replace_first: '/', '' | replace: '/', ''  | replace: '.html', '' %}
+<!--<div class="url">/assets/files/Hadith1.pdf</div>-->
