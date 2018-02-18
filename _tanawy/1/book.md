@@ -3,7 +3,7 @@ title: 'حل كتاب الحديث 1 مقررات اول ثانوي كامل'
 layout: post
 image: /assets/img/cover_hadith1_1.jpg
 excerpt_separator: '<!--more-->'
-category: 'old'
+category: 'TF'
 
 
 ---
