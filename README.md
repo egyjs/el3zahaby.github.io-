@@ -8,7 +8,9 @@
 - - [ ] "اضف اجابتك"
 - - [ ] "طلب اجابة"
 - - [ ] "تواصل معنا"
-- [=] custom page like e.g : category
+- [x] custom page like e.g : category
+- [=] split single book
+- [ ] screenshot the page of book btn
 - [x] feed."xml" & "json"
 - [x] SEO Tags
 - [x] share the book post
