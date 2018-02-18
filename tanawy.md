@@ -18,7 +18,7 @@ permalink: /tanawy/
 }
 </style>
 <div class="col s12 m4">
-    <a href="#/tanawy/1/">
+    <a href="/tanawy/1/">
         <div class="card ">
             <div class="card-image">
                 <div class="titleIMG" width="100%" >
