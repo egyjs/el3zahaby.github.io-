@@ -18,7 +18,7 @@ permalink: /tanawy/
 }
 </style>
 <div class="col s12 m4">
-    <a href="/tanawy/1/">
+    <a href="#/tanawy/1/">
         <div class="card ">
             <div class="card-image">
                 <div class="titleIMG" width="100%" >
@@ -33,7 +33,7 @@ permalink: /tanawy/
     </a>
 </div>
 <div class="col s12 m4">
-    <a href="/tanawy/2/">
+    <a href="#/tanawy/2/">
         <div class="card">
             <div class="card-image">
                 <div class="titleIMG" width="100%" >
@@ -47,7 +47,7 @@ permalink: /tanawy/
     </a>
 </div>
 <div class="col s12 m4">
-    <a href="/tanawy/3/">
+    <a href="#/tanawy/3/">
         <div class="card">
             <div class="card-image">
                 <div class="titleIMG" width="100%" >
@@ -62,18 +62,12 @@ permalink: /tanawy/
     </a>
 </div>
 <div class="col m12">
-    <a href="#">
         <div class="card">
             <div class="card-image">
                 <div class="titleIMG" width="100%" style="padding: 65px;" >
                   سيتم اضافة المزيد من المقررات قريبا
                 </div>
-
-            </div>
-            <div class="card-content">
-                <p>:)</p>
             </div>
         </div>
-    </a>
 </div>
 
