@@ -65,7 +65,7 @@ permalink: /tanawy/
     <a href="#">
         <div class="card">
             <div class="card-image">
-                <div class="titleIMG" width="100%" >
+                <div class="titleIMG" width="100%" style="padding: 65px;" >
                   سيتم اضافة المزيد من المقررات قريبا
                 </div>
 
