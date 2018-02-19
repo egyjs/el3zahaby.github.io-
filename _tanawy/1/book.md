@@ -11,10 +11,8 @@ file: Hadith1
 {{ page.title }}<!--more-->:
 
 | بالتوفيق :clap:   |
-| ------------ |
-| ولتحميل الكتاب  : <a href="/assets/files/Hadith1.pdf" download >اضغط هنا</a>  |
+| ------------  |
+| ولتحميل الكتاب  : <a href="/assets/files/{{ page.file }}.pdf" download >اضغط هنا</a>  |
 
-* {{ page.file }} 
-* {{ file }} 
-
-<!--<div class="url">/assets/files/{{ file }}.pdf</div>-->
+{{ page.filename }}
+<div class="url">/assets/files/{{ page.file }}.pdf</div>
