@@ -3,7 +3,7 @@ title: 'حل كتاب الحديث 1 مقررات اول ثانوي كامل'
 layout: post
 image: /assets/img/cover_hadith1_1.jpg
 excerpt_separator: '<!--more-->'
-category: 'TF'
+tag: 'TF'
 file: Hadith1
 
 ---
@@ -14,5 +14,5 @@ file: Hadith1
 | ------------  |
 | ولتحميل الكتاب  : <a href="/assets/files/{{ page.file }}.pdf" download >اضغط هنا</a>  |
 
-{{ page.filename }}
+
 <div class="url">/assets/files/{{ page.file }}.pdf</div>
