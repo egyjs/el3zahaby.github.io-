@@ -7,8 +7,11 @@
 })(jQuery); // end of jQuery name space
 
 $(document).ready(function () {
-    var Gogl = $('div.url');
-    $(Gogl).replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '"></iframe>');
+    var PDFjs = $('div.url:first'),
+        btnMore = $('div.url');
+
+    $(PDFjs).replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '"></iframe>');
+    $(btnMore).replaceWith('<a class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '"></a>');
 
     var frame = $('iframe');
     frame.addClass('card');

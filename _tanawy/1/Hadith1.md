@@ -19,6 +19,6 @@ file: Hadith1
 
 {% for files in site.static_files %}
   {% if files.path contains '/assets/files/Hadith1/' %}
-<div class="url">{{ files.path }}</div>
+<div class="url ">{{ files.path }}</div>
   {% endif %}
 {% endfor %}
