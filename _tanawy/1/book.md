@@ -14,5 +14,5 @@ category: 'TF'
 | ------------ |
 | ولتحميل الكتاب  : <a href="/assets/files/Hadith1.pdf" download >اضغط هنا</a>  |
 
-- {{ filename }} -
+- {{ page.filename }} -
 <!--<div class="url">/assets/files/{{ filename }}.pdf</div>-->
