@@ -15,4 +15,10 @@ file: Hadith1
 | ولتحميل الكتاب  : <a href="/assets/files/{{ page.file }}.pdf" download >اضغط هنا</a>  |
 
 
-<div class="url">/assets/files/{{ page.file }}.pdf</div>
+<!--<div class="url">/assets/files/{{ page.file }}.pdf</div>-->
+
+{% for image in site.static_files %}
+  {% if image.path contains 'assets/files/{{ page.file }}' %}
+    <img src="{{ image.path }}" alt="">
+  {% endif %}
+{% endfor %}
