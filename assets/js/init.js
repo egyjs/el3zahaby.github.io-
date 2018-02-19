@@ -11,8 +11,10 @@ $(document).ready(function () {
         btnMore = $('div.url');
 
     $(PDFjs).replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '"></iframe>');
-    $(btnMore).replaceWith('<a class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '">الجزء التالي</a>');
-
+    $(btnMore).replaceWith(function(){
+         var txt = $(this).html();
+        return '<a class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي</a>'
+    });
     var frame = $('iframe');
     frame.addClass('card');
     frame.css({
