@@ -17,8 +17,9 @@ file: Hadith1
 
 <!--<div class="url">/assets/files/{{ page.file }}.pdf</div>-->
 
-{% for files in site.static_files %}
-  {% if files.path contains '/assets/files/Hadith1/' %}
-<div class="url ">{{ files.path }}</div>
+{% assign files = site.static_files | sort:"name"  %}
+{% for f in files %}
+  {% if f.path contains '/assets/files/Hadith1/' %}
+<div class="url ">{{ f.path }}</div>
   {% endif %}
 {% endfor %}
