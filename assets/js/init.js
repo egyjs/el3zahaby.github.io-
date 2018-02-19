@@ -10,7 +10,7 @@ $(document).ready(function () {
     var PDFjs = $('div.url:first'),
         btnMore = $('div.url');
 
-    $(PDFjs).first().replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '"></iframe>');
+  //  $(PDFjs).first().replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '"></iframe>');
     $(btnMore).replaceWith(function(){
          var txt = $(this).html();
         return '<a class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي</a>'
