@@ -17,8 +17,8 @@ file: Hadith1
 
 <!--<div class="url">/assets/files/{{ page.file }}.pdf</div>-->
 
-{% for image in site.static_files %}
-  {% if image.path contains '/assets/files/Hadith1/' %}
-<img src="{{ image.path }}" alt="">
+{% for files in site.static_files %}
+  {% if files.path contains '/assets/files/Hadith1/' %}
+<div class="url">{{ files.path }}</div>
   {% endif %}
 {% endfor %}
