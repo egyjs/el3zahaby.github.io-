@@ -38,11 +38,11 @@
 
     <div class="container">
         <div class="section">
-{% assign filename = page.url | split: '/' | last | replace: '.html', '' %}
+    {% assign filename = page.url | split: '/' | last | replace: '.html', '' %}
             <div class="card">
                 <div class="card-content ">
                     <span class="card-title">{{ page.title }}</span>
-<hr>
+<hr>= {{ filename }} =
                     {{ content }}
 
                 </div>
