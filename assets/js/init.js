@@ -6,9 +6,22 @@
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+function sortThem(s) {
+    Array.prototype.slice.call(document.body.querySelectorAll(s)).sort(function sort (ea, eb) {
+        var a = ea.textContent.trim();
+        var b = eb.textContent.trim();
+        if (a.textContent < b.textContent) return -1;
+        if (a.textContent > b.textContent) return 1;
+        return 0;
+    }).forEach(function(div) {
+        div.parentElement.appendChild(div);
+    });
+}
+
 $(document).ready(function () {
     var PDFjs = $('div.url:first'),
         btnMore = $('div.url');
+        sortThem('div.url');
 
   //  $(PDFjs).first().replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $('div.url').html() + '"></iframe>');
     $(btnMore).replaceWith(function(){
