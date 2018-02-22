@@ -19,7 +19,7 @@ $(document).ready(function () {
          var txt  = $(this).html(),
              Tid  = $(this).attr('id');
 
-        return '<a onclick="replaceThis('+Tid+');" class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي :</a>'
+        return '<a onclick="replaceThis(\'#'+Tid+'\');" class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي :</a>'
     });
     var frame = $('iframe');
     frame.addClass('card');
