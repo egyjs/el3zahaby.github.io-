@@ -6,8 +6,8 @@
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-function replaceThis(el){
-    return $(el).replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $(this).html() + '"></iframe>');
+function replaceThisBtn(el){
+    return $(el).replaceWith('<iframe src="'+ $(el).attr('data-href') +'"></iframe>');
 }
 
 $(document).ready(function () {
@@ -19,7 +19,7 @@ $(document).ready(function () {
          var txt  = $(this).html(),
              Tid  = $(this).attr('id');
 
-        return '<a onclick="replaceThis(\'#'+Tid+'\');" class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي</a>'
+        return '<a onclick="replaceThisBtn(\'#'+Tid+'\');" id="'+Tid+'" class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي</a>'
     });
     var frame = $('iframe');
     frame.addClass('card');
