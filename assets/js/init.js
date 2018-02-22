@@ -15,7 +15,7 @@ $(document).ready(function () {
     $(btnMore).replaceWith(function(){
          var txt  = $(this).html(),
              func = '$(this).replaceWith(\'<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/\' + $(\'div.url\').html() + \'"></iframe>\')';
-        return '<a onclick="'++'" class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي :</a>'
+        return '<a onclick="'+func+'" class="waves-effect waves-light btn green darken-1" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء التالي :</a>'
     });
     var frame = $('iframe');
     frame.addClass('card');
