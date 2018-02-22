@@ -1,13 +1,18 @@
 --- 
 layout: landing 
 
---- 
-{{ site.collections }}
+---
 {% for collection in site.collections %}
-    <section>
-        <h1><a href="{{ collection.directory }}">{{ collection.title }}</a></h1>
-        Label: {{ collection.label }}
-    </section>
+  {% capture label %}{{ collection | first }}{% endcapture %}
+  <h3>All documents listed in collection '{{ label }}'</h3>
+
+  {% for doc in site.collections.[label].docs %}
+    <li>
+      <span>{{ doc.date | date_to_string }}</span>
+      <a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a>
+    </li>
+  {% endfor %}
+
 {% endfor %}
 
 <!--
