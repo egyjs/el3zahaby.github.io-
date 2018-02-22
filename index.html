@@ -2,19 +2,15 @@
 layout: landing 
 
 ---
-{% for collection in site.collections %}
-  {% capture label %}{{ collection | first }}{% endcapture %}
-<h3>All documents listed in  '{{ label }}'</h3>
+<script>window.location.href = "/level";</script>
+<meta http-equiv="refresh" content="0;URL='/level'" />
 
-{% for doc in site.collections.[label].docs %}
-            <li>
-            <span>{{ doc.date | date_to_string }}</span>
-            <a href="{{ site.url }}{{ doc.url }}">{{ doc.title }}</a>
-            </li>
-{% endfor %}
+<h1 class="header center orange-text">تحويل</h1>
 
-{% endfor %}
-
+<h5 class="header col s12 light">يتم تحويلك الآن, اذا لم يتم التحويل في غضون 5 ثوان الرجاء الضغ على زر "تحويل"</h5>
+<div class="row center">
+    <a href="/level"  class="btn-large waves-effect waves-light orange">تحويل</a>
+</div>
 <!--
 {% for post in site.posts %}
 <div class="col s12 m3">
