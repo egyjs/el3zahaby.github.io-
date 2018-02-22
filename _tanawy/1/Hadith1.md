@@ -20,6 +20,6 @@ file: Hadith1
 {% assign files = site.static_files %}
 {% for f in files %}
   {% if f.path contains '/assets/files/Hadith1/' %}
-<div class="url">{{ f.path }}</div>
-  {% endif %}
+    <div class="url" data-id="{{ forloop.index }}" >{{ f.path }}</div>
+  {% endif %} 
 {% endfor %}
