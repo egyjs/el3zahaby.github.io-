@@ -1,6 +1,6 @@
 ---
 title: 'حل كتاب الحديث 1 مقررات اول ثانوي كامل'
-layout: post
+layout: book
 image: /assets/img/cover_hadith1_1.jpg
 excerpt_separator: '<!--more-->'
 tag: 'TF'
@@ -17,9 +17,3 @@ file: Hadith1
 
 <!--<div class="url">/assets/files/{{ page.file }}.pdf</div>-->
 
-{% assign files = site.static_files %}
-{% for f in files %}
-  {% if f.path contains '/assets/files/Hadith1/' %}
-<div class="url" id="{{ f.basename }}" >{{ f.path }}</div>
-  {% endif %} 
-{% endfor %}
