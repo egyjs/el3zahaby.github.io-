@@ -26,7 +26,6 @@ $(document).ready(function () {
 
 });
 
-$('.fb-comments').attr("data-href", window.location.href);
 
 
 

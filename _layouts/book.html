@@ -48,7 +48,7 @@
 
 {% assign  foldername = "/assets/files/" | append: filename | append: "/" %}
 
-{{foldername}}
+{{site.url}}{{page.url}}
 
 {% assign files = site.static_files %}
 {% for f in files %}
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="card-action">
-                    <div class="fb-comments" data-href=""  data-width="100%"></div>
+                    <div class="fb-comments" data-href="{{site.url}}{{page.url}}"  data-width="100%"></div>
                 </div>
 <!--
                 <div class="card-action">
