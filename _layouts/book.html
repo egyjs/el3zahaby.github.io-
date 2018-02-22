@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    {% seo %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <!-- CSS :_  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/assets/css/materialize.rtl.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- FB comments -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img alt="logo" width="64" height="64" src="/assets/img/logo96.png"></a>
+
+{% include nav.html %}
+
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+       {% assign filename = page.url | split: '/' | last | replace: '.html', '' %}
+            <div class="card">
+                <div class="card-content ">
+                    <span class="card-title">{{ page.title }}</span>
+<hr>
+                    {{ content }}
+{% assign files = site.static_files %}
+{% for f in files %}
+  {% if f.path contains '/assets/files/'+ filename +'/' %}
+<div class="url" id="{{ f.basename }}" >{{ f.path }}</div>
+  {% endif %}
+{% endfor %}
+                </div>
+
+                <div class="card-action">
+                    <div class="fb-comments" data-href=""  data-width="100%"></div>
+                </div>
+<!--
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+  <div class="fixed-action-btn click-to-toggle">
+    <a onclick="cut('{{page.title}}')" class="btn-floating btn-large red">
+      <i class="large material-icons">share</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating green sharebtn whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a class="btn-floating blue  sharebtn twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="btn-floating blue darken-3 sharebtn facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"><i class="fab fa-facebook-f"></i></a></li>
+    </ul>
+  </div>
+
+    <!--
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+-->
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="https://apis.google.com/js/client.js"></script>
+
+    <script src="/assets/js/init.js"></script>
+
+</body>
+
+</html>
