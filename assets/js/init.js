@@ -13,7 +13,7 @@ function replaceThisBtn(el){
 $(document).ready(function () {
     var btnMore = $('div.url');
 
-    $(btnMore).first().replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $(this).html() + '"></iframe>');
+    $(btnMore).first().replaceWith('<iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + $(btnMore).first().html() + '"></iframe>');
     $(btnMore).replaceWith(function(){
          var txt  = $(this).html(),
              Tid  = $(this).attr('id');
