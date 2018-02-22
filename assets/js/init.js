@@ -22,19 +22,7 @@ $(document).ready(function () {
 
         return '<a onclick="replaceThisBtn(\'#'+Tid+'\');" id="'+Tid+'" class="waves-effect waves-light btn green darken-1 books" data-href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء '+Tid+'</a>'
     });
-    replaceThisBtn($(btnMore).first());
-    var frame = $('iframe');
-    frame.addClass('card');
-    frame.css({
-        "width": "100%",
-        "height": "400",
-        "border": "0",
-        //        "position": "absolute",
-        "right": "0",
-        "left": "0"
-    });
-
-
+    replaceThisBtn($(".books").first());
 
 });
 
