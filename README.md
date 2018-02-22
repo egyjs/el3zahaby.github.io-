@@ -9,7 +9,7 @@
 - - [ ] "طلب اجابة"
 - - [ ] "تواصل معنا"
 - [x] custom page like e.g : category
-- [=] split single book
+- [x] split single book
 - [ ] screenshot the page of book btn
 - [x] feed."xml" & "json"
 - [x] SEO Tags

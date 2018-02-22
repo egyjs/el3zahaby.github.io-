@@ -2,6 +2,14 @@
 layout: landing 
 
 --- 
+{% for collection in site.collections %}
+    <section>
+        <h1><a href="{{ collection.directory }}">{{ collection.title }}</a></h1>
+        Label: {{ collection.label }}
+    </section>
+{% endfor %}
+
+<!--
 {% for post in site.posts %}
 <div class="col s12 m3">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -20,3 +28,4 @@ layout: landing
     </a>
 </div>
 {% endfor %}
+-->
