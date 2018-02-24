@@ -6,6 +6,9 @@
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ $('nav:first').remove();
+}
 function replaceThisBtn(el){
      $('iframe').remove();
      $('.books').show()
