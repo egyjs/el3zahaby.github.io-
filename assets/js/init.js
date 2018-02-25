@@ -6,6 +6,9 @@
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ $('nav:first').remove();
+}
 function replaceThisBtn(el){
      $('iframe').remove();
      $('.books').show()
@@ -23,6 +26,7 @@ $(document).ready(function () {
         return '<a onclick="replaceThisBtn(\'#'+Tid+'\');" id="'+Tid+'" class="btn btn-block green darken-1 mb6 books" data-href="/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء '+Tid+'</a>'
     });
     replaceThisBtn($(".books").first());
+
 
 });
 
