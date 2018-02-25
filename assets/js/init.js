@@ -23,7 +23,7 @@ $(document).ready(function () {
          var txt  = $(this).html(),
              Tid  = $(this).attr('id');
 
-        return '<a onclick="replaceThisBtn(\'#'+Tid+'\');" id="'+Tid+'" class="btn btn-block green darken-1 mb6 books" data-href="/web/viewer.html?file=https://el3zahaby.github.io/' + txt + '">الجزء '+Tid+'</a>'
+        return '<a onclick="replaceThisBtn(\'#'+Tid+'\');" id="'+Tid+'" class="btn btn-block green darken-1 mb6 books" data-href="/web/viewer.html?file=' + txt + '">الجزء '+Tid+'</a>'
     });
     replaceThisBtn($(".books").first());
 
