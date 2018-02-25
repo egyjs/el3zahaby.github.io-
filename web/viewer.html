@@ -38,18 +38,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
     <script src="viewer.js"></script>
-    <script  type="text/javascript">
-function downloadCanvas(link, canvasId = "page"+ PDFViewerApplication.pdfViewer.currentPageNumber, filename = "page"+ PDFViewerApplication.pdfViewer.currentPageNumber) {
-    link.href = document.getElementById(canvasId).toDataURL();
-    link.download = filename;
-    console.log(link);
-}
-
-  //      pageid = "page"+ PDFViewerApplication.pdfViewer.currentPageNumber;
-//        pageid = "page"+ "2" /*PDFViewerApplication.pdfViewer.currentPageNumber */;
-
-
-</script>
+    <script src="script.js"></script>
  <style>
       a#secondarydownloadPage {
     -webkit-box-sizing: border-box;
