@@ -1,7 +1,7 @@
 ---
-title: 'حل كتاب الحديث 1 مقررات اول ثانوي كامل'
+title: 'حل كتاب الفيزياء اول ثانوي مقررات 1 كامل'
 layout: book
-image: /assets/img/cover_hadith1_1.jpg
+image: /assets/img/fizia1.jpg
 excerpt_separator: '<!--more-->'
 tag: 'TF'
 file: fizia1
