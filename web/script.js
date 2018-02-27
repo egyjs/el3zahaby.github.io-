@@ -3,4 +3,5 @@ function downloadCanvas(link) {
     link.href = document.getElementById(pageId).toDataURL();
     link.download = pageId+"png";
     console.log(link);
+  //  console.log(btoa(document.getElementById(pageId).toDataURL()));
 }
