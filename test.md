@@ -2,8 +2,6 @@
 layout: none
 
 ---
-
-
 {% case page.layout %}
 	{% when 'page' %}
 		{% for page in site.pages %}
