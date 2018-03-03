@@ -19,4 +19,4 @@ layout: none
 ------------
 
 
-{{ sorted_pages }}
+{{ site.pages }}
