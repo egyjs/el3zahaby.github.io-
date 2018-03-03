@@ -9,11 +9,11 @@ layout: none
 {% for page in sorted_pages %}
   {% assign level = page.dir | split:"/" | size | minus:1 %}
   {% if level > previous_level %}
-    <ul>
+<ul>
   {% elsif level < previous_level %}
-    </ul>
+</ul>
   {% endif %}
-  <li><a href="{{page.url}}">{{page.dir | split:"/" | last | replace:'-',' ' }}</a></li>
+<li><a href="{{page.url}}">{{page.dir | split:"/" | last | replace:'-',' ' }}</a></li>
   {% assign previous_level = level %}
 
 {% endfor %}
