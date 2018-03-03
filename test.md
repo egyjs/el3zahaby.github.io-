@@ -1,9 +1,14 @@
-
-<ul>
-{% for page in site.tanawy %}
-  <li><a href="{{ page.url }}">{{ page }}</a></li>
+{% assign level = 0 %}
+{% assign previous_level = 1 %}
+{% assign sorted_pages = site.pages | sort:'url' %}
+{% for page in sorted_pages %}
+  {% assign level = page.dir | split:"/" | size | minus:1 %}
+  {% if level > previous_level %}
+    <ul>
+  {% elsif level < previous_level %}
+    </ul>
+  {% endif %}
+  <li><a href="{{page.url}}">{{page.dir | split:"/" | last | replace:'-',' ' }}</a></li>
+  {% assign previous_level = level %}
 
 {% endfor %}
-{{ site.collections }}
-</ul>
-
