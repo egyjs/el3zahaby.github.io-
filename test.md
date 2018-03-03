@@ -1,3 +1,8 @@
+---
+layout: none
+
+---
+
 {% assign level = 0 %}
 {% assign previous_level = 1 %}
 {% assign sorted_pages = site.pages | sort:'url' %}
