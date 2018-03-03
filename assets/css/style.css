@@ -1,3 +1,6 @@
+body{
+    background: #fcfdfd;
+}
 .row .col {
      float: right;
 }

@@ -13,16 +13,28 @@ permalink: feed.json
     "icon": "{{ site.url }}/img/favicon.large.png",
     "logo": "{{ site.url }}/img/logo.png",
     "expired": false,
-    "items": [
+    "post": [
 {% for post in site.posts %}
         {
             "id": "{{ post.id }}",
             "title": {{ post.title | smartify | jsonify }},
             "content_html": {{ post.content | jsonify }},
             "url": "{{ site.url }}{{ post.url }}",
-            "summary": {% if post.url contains "/blog/" %}{{ post.excerpt | smartify | jsonify }}{% else %}{{ post.description | smartify | jsonify }}{% endif %},
+            "img": "{{ site.url }}{{ post.image }}",
             "date_published": "{{ post.date }}"
         }{% unless forloop.last == true %},{% endunless %}
+{% endfor %}
+    ],
+    "books": [
+{% for post in site.posts %}
+{
+  "items": {
+    "t1": {
+      "s": "0"
+    },
+    "t2": {}
+  }
+}{% unless forloop.last == true %},{% endunless %}
 {% endfor %}
     ]
 }
